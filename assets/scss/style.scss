@@ -1,0 +1,131 @@
+// font
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point:300,400,700&display=swap');
+.d-flex {
+    display: flex;
+}
+
+.align-content-center {
+    justify-content: center;
+}
+
+// color
+$primary :rgb(38,
+58,
+77);
+$secondary :#2b2a2e;
+$light: #fff;
+.bg-primary {
+    background: $primary;
+    color: $light;
+}
+
+.newContext {
+    display: none;
+}
+
+body {
+    width: 99vw;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    textarea,
+    input,
+    select {
+        resize: none;
+        height: 3rem;
+        font-size: 1.2rem;
+        vertical-align: centre;
+    }
+    button {
+        border: 0;
+        padding: 1rem 3rem;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+    aside {
+        width: 10vw !important;
+    }
+    .sectionAdd {
+        text-align: center;
+        padding: 3rem 0;
+        width: 20vw;
+        background: rgb(42, 43, 63);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sectionViewer {
+        width: 50vw;
+        margin-left: 2rem;
+        background: rgb(153, 180, 216);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .thelist {
+            width: 95%;
+            height: 30vh;
+            margin: 1rem;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 5px solid rgb(85, 93, 104);
+            border-right: transparent;
+            border-radius: 10px;
+        }
+    }
+    .over {
+        transition: 1s linear;
+    }
+    .over::after {
+        content: " ";
+        white-space: pre;
+        margin-top: 80px;
+        background-color: blue;
+    }
+    .todoLi {
+        user-select: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.2rem;
+        padding-left: 1vw;
+        color: #fff;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        span {
+            margin-left: 3rem;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.5);
+        }
+        .todoMessage {
+            float: inline;
+            font-size: 1.2rem;
+            padding-left: 3rem !important;
+        }
+    }
+    .archive {
+        width: 95%;
+        height: 30vh;
+        margin: 1rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 5px solid rgb(85, 93, 104);
+        border-right: transparent;
+        border-radius: 10px;
+    }
+}
+
+#todolist,
+#archive {
+    border: 0;
+    padding-left: 5px !important;
+}
+
+.selected {
+    background: rgb(141, 33, 19) !important;
+}
