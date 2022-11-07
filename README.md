@@ -24,3 +24,5 @@ Voici mon projet de todoList selon les contraintes que l'ont nous à fixer.
  ![screenshoot](https://github.com/emilemarkus/todolist/blob/master/assets/img/Screenshot.png?raw=true)(http://markus-emile.be/becode/todolist/)
 
  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5ed5458-0d1f-4756-b89b-804919851584/deploy-status)](https://app.netlify.com/sites/peaceful-hotteok-2c287d/deploys)
+
